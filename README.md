@@ -8,4 +8,4 @@ cip.cc:一个公开网站，可以用于获取自己主机的地址。
 nmap IP地址：用于查看IP地址暴露的端口情况，安装nmap,yum -y install nmap
 nmap 127.0.0.1查看本机IP地址
 netstat查看指定端口占用情况，安装netstat,yum -y install net-tolls
-netstat语法：netstat -anp | grep 端口号
+netstat语法：netstat -IP地址 | grep 端口号
