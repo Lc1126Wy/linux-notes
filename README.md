@@ -6,6 +6,16 @@ curl：可以发送http网络请求，可以用来下载文件、获取信息，
 cip.cc:一个公开网站，可以用于获取自己主机的地址。
 端口：物理端口和虚拟端口
 nmap IP地址：用于查看IP地址暴露的端口情况，安装nmap,yum -y install nmap
-nmap 127.0.0.1查看本机IP地址
+nmap 127.0.0.1查看本机IP地址的端口情况
 netstat查看指定端口占用情况，安装netstat,yum -y install net-tolls
 netstat语法：netstat -IP地址 | grep 端口号
+进程管理:
+ps:查看Linux系统中的进程信息
+ps -ef:列出全部进程的全部信息（可以使用grep过滤）
+关闭进程：kill，语法：kil -9:表示强制关闭进程
+查看系统整体资源（top）；查看磁盘信息监控（df),df -h可以显示更完整的单位信息。
+磁盘监控信息：
+iostat：查看cpu和磁盘的相关信息
+语法：iostat -x [num1] [num2]:-x表示可以显示更多信息，num1：刷新间隔；num2：刷新几次。
+网络状态监控：sar;  语法：sar -n DEV num1 num2(-n查看网络，DEV表示查看网络接口）
+环境变量：
